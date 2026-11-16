@@ -1,5 +1,5 @@
 // Minimal offline cache: network-first, falling back to cache.
-const CACHE = 'swipeai-v1';
+const CACHE = 'swipeai-v2';
 self.addEventListener('install', (e) => { self.skipWaiting(); });
 self.addEventListener('activate', (e) => { e.waitUntil(self.clients.claim()); });
 self.addEventListener('fetch', (e) => {
